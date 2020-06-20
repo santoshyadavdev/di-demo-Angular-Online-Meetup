@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CONFIG_TOKEN, CONFIG_VALUE } from './token/config.token';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,9 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{
+    provide : CONFIG_TOKEN, useValue : CONFIG_VALUE
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

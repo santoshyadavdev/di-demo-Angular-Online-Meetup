@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "didemo"
+    }
+  },
+  "defaultProject": "didemo",
+  "cli": {
+    "analytics": "4680953c-a011-442e-b169-9e4d999ef4ea"
+  }
 }
